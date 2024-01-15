@@ -7,13 +7,16 @@ import Counter from './components/Counter'
 import Resume from './components/Resume'
 import FunctionEvent from './components/FunctionEvent'
 import ClassEvnet from './components/ClassEvent'
+import FunctionalCounter from './components/FunctionalCounter'
+import ConditionalComponent from './components/ConditionalComponent'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Hello />
+      
+       {/*<Hello />
       <Message messagecode="10" messagecontent = "This is a message from props!"/>
       <Profile name="Hendry" lastname="Ford" >
         <h3>This is a profile of a person.</h3>
@@ -21,7 +24,9 @@ function App() {
       <Counter></Counter>
       <Resume name="FOod" ></Resume>
       <FunctionEvent />
-      <ClassEvnet/>
+      <ClassEvnet />
+      <FunctionalCounter></FunctionalCounter> */}
+      <ConditionalComponent></ConditionalComponent>
     </>
   )
 }
