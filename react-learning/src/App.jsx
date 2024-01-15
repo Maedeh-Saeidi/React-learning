@@ -9,6 +9,7 @@ import FunctionEvent from './components/FunctionEvent'
 import ClassEvnet from './components/ClassEvent'
 import FunctionalCounter from './components/FunctionalCounter'
 import ConditionalComponent from './components/ConditionalComponent'
+import Product from './components/Product'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,6 +28,7 @@ function App() {
       <ClassEvnet />
       <FunctionalCounter></FunctionalCounter> */}
       <ConditionalComponent></ConditionalComponent>
+      <Product></Product>
     </>
   )
 }
