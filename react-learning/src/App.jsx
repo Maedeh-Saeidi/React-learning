@@ -13,6 +13,7 @@ import Product from './components/Product'
 import Form from './components/Form'
 import Todo from './components/Todo'
 import ListItem from './components/ListItem'
+import InlineComponent from './components/InlineComponent'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -32,9 +33,10 @@ function App() {
       <FunctionalCounter></FunctionalCounter>
        <ConditionalComponent></ConditionalComponent>
       <Product></Product> 
-      <Form></Form> */}
+      <Form></Form> 
       <Todo></Todo>
-      <ListItem></ListItem>
+      <ListItem></ListItem> */}
+      <InlineComponent></InlineComponent>
     </>
   )
 }
