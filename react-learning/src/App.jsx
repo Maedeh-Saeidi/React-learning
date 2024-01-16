@@ -10,6 +10,7 @@ import ClassEvnet from './components/ClassEvent'
 import FunctionalCounter from './components/FunctionalCounter'
 import ConditionalComponent from './components/ConditionalComponent'
 import Product from './components/Product'
+import Form from './components/Form'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,9 +27,10 @@ function App() {
       <Resume name="FOod" ></Resume>
       <FunctionEvent />
       <ClassEvnet />
-      <FunctionalCounter></FunctionalCounter> */}
-      <ConditionalComponent></ConditionalComponent>
-      <Product></Product>
+      <FunctionalCounter></FunctionalCounter>
+       <ConditionalComponent></ConditionalComponent>
+      <Product></Product> */}
+      <Form></Form>
     </>
   )
 }
