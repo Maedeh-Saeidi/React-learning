@@ -11,6 +11,8 @@ import FunctionalCounter from './components/FunctionalCounter'
 import ConditionalComponent from './components/ConditionalComponent'
 import Product from './components/Product'
 import Form from './components/Form'
+import Todo from './components/Todo'
+import ListItem from './components/ListItem'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,9 +31,11 @@ function App() {
       <ClassEvnet />
       <FunctionalCounter></FunctionalCounter>
        <ConditionalComponent></ConditionalComponent>
-      <Product></Product> */}
-      <Form></Form>
+      <Product></Product> 
+      <Form></Form> */}
+      <Todo></Todo>
+      <ListItem></ListItem>
     </>
   )
 }
-export default App
+export default App;
