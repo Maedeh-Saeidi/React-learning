@@ -14,13 +14,13 @@ import Form from './components/Form'
 import Todo from './components/Todo'
 import ListItem from './components/ListItem'
 import InlineComponent from './components/InlineComponent'
+import StylesheetComponent from './components/StylesheetComponent'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      
        {/*<Hello />
       <Message messagecode="10" messagecontent = "This is a message from props!"/>
       <Profile name="Hendry" lastname="Ford" >
@@ -35,9 +35,11 @@ function App() {
       <Product></Product> 
       <Form></Form> 
       <Todo></Todo>
-      <ListItem></ListItem> */}
+      <ListItem></ListItem> 
       <InlineComponent></InlineComponent>
-    </>
+      */}
+        <StylesheetComponent/>
+      </>
   )
 }
 export default App;
