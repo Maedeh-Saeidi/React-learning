@@ -18,6 +18,7 @@ import StylesheetComponent from './components/StylesheetComponent'
 import FragmentComponent from './components/FragmentComponent'
 import Table from './components/table'
 import Parent from './components/Parent'
+import Modal from './components/modal'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -44,6 +45,7 @@ function App() {
       <Table></Table>
          */}
       <Parent></Parent>
+      <Modal></Modal>
       </>
   )
 }
