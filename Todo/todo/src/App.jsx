@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Header from './components/header'
 import Form from './components/Form'
 import './App.css'
-import Todo from './components/Todo'
+import TodoList from './components/TodoList'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +16,9 @@ function App() {
         setTodo={setTodo}
         todoList={todoList}
         setTodoList={setTodoList}></Form>
-      <Todo/>
+      <TodoList
+        setTodoList={setTodoList}
+        todoList={todoList} />
     </div>
 
   )

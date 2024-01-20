@@ -15,7 +15,7 @@ export default function Todo() {
   }
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}
         <input onChange={handleChange} type="text" value={todo}></input>
         <button onChange={handleSubmit} type="submit">Add</button>
       </form>
