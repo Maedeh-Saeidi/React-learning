@@ -17,7 +17,7 @@ import InlineComponent from './components/InlineComponent'
 import StylesheetComponent from './components/StylesheetComponent'
 import FragmentComponent from './components/FragmentComponent'
 import Table from './components/table'
-
+import Parent from './components/Parent'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -41,8 +41,9 @@ function App() {
       <InlineComponent></InlineComponent>
       <StylesheetComponent />
       <FragmentComponent></FragmentComponent>
-      */}
       <Table></Table>
+         */}
+      <Parent></Parent>
       </>
   )
 }
