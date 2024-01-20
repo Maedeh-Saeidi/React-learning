@@ -15,6 +15,8 @@ import Todo from './components/Todo'
 import ListItem from './components/ListItem'
 import InlineComponent from './components/InlineComponent'
 import StylesheetComponent from './components/StylesheetComponent'
+import FragmentComponent from './components/FragmentComponent'
+import Table from './components/table'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -37,8 +39,10 @@ function App() {
       <Todo></Todo>
       <ListItem></ListItem> 
       <InlineComponent></InlineComponent>
+      <StylesheetComponent />
+      <FragmentComponent></FragmentComponent>
       */}
-        <StylesheetComponent/>
+      <Table></Table>
       </>
   )
 }
