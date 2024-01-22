@@ -15,6 +15,6 @@ export default function Parent() {
       <Child count={childCount} />
       <button onClick={changeParentCount}>Increment parent count</button>
       <button onClick={changeChildCount}>Increment child count</button>
-  </div>
+    </div>
   )
 }
