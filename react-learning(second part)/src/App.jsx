@@ -12,12 +12,12 @@ function App() {
     seatNumbers: [1, 4, 7]
   }
   return (
-    <>
+    <div className='App'>
       {/* <Hello person={person} />  
-      <Fruits /> 
-      */}
       <ConditionalComponent></ConditionalComponent>
-    </>
+       */}
+      <Fruits /> 
+    </div>
   )
 }
 

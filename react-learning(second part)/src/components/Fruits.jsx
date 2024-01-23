@@ -12,7 +12,12 @@ export default function Fruits() {
     <>
       <ul>
         {fruits.map(fruit => (
-          <h2><Fruit key={fruit.name} name={fruit.name} price={fruit.price} emoji={fruit.emoji} /></h2>
+          <h2><Fruit
+            key={fruit.name}
+            name={fruit.name}
+            price={fruit.price}
+            emoji={fruit.emoji}
+          /></h2>
         ))} 
       </ul>
     </>
