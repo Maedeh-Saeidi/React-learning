@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Hello from './components/Hello'
 import Fruits from './components/Fruits'
+import ConditionalComponent from './components/ConditionalComponent'
 
 function App() {
   const person = {
@@ -12,8 +13,10 @@ function App() {
   }
   return (
     <>
-      <Hello person={person} /> 
-      <Fruits/>
+      {/* <Hello person={person} />  
+      <Fruits /> 
+      */}
+      <ConditionalComponent></ConditionalComponent>
     </>
   )
 }
