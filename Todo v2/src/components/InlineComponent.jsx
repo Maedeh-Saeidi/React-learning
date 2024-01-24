@@ -1,11 +1,8 @@
-const header = {
-  color: "blue",
-  fontSize: "140px",
-}
+import styles from './inlinecomponent.module.css';
 export default function InlineComponent() {
   return (
     <>
-      <h2 style={header}>
+      <h2 className={styles.header}>
         Inline styling</h2>
     </>
   )
