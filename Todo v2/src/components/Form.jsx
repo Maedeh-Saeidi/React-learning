@@ -2,7 +2,8 @@ import styles from "./form.module.css"
 import { useState } from "react";
 export default function Form({todos, setTodos}) {
   // const [todo, setTodo] = useState('');
-  const [todo, setTodo] = useState({name : "", done: false});
+  const [todo, setTodo] = useState({ name: "", done: false });
+  
   function handleSubmit(e) {
     e.preventDefault();
     setTodos([...todos, todo]);
