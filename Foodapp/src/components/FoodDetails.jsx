@@ -1,10 +1,11 @@
+import styles from "./fooddetails.module.css";
 import { useEffect, useState } from "react";
 export default function FoodDetails({ foodId }) {
   const [food, setFood] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
   const URL = `https://api.spoonacular.com/recipes/${foodId}/information`;
-  const API_KEY = "fccfebe3ce004ae1abbcb4ac1b30790d";
+  const API_KEY = "ed2bd6048a4844b998250e8a3b54d17b";
 
 
   useEffect(() => {
@@ -17,14 +18,15 @@ export default function FoodDetails({ foodId }) {
     }
     fetchFood()
   }, [foodId]);
-
-
+  //  console.log(typeof(food.
+  //     extendedIngredients) 
+  // );
   return (
     <div>
-      <div>
-        <h1>{food.title}</h1>
-        <img src={food.image}></img>
-        <div>
+      <div className={styles.recipeCard}>
+        <h1 className={styles.recipeName}>{food.title}</h1>
+        <img src={food.image} className={styles.recipeImage}></img>
+        <div className={styles.recipeDetails}>
           <span>
             <strong>⌚️ {food.readyInMinutes} Minutes</strong>
           </span>
@@ -32,21 +34,48 @@ export default function FoodDetails({ foodId }) {
             <strong>👨‍👩‍👦 Serves {food.servings}</strong>
           </span>
           <span>
-            {food.vegan ? "🐮 Vegan" : ""}
+            <strong>
+              {food.vegan ? "🐮 Vegan" : ""}
+            </strong>
           </span>
           <span>
-            {food.vegetarian ? "🥕 Vegetarian" : "🍖 Non-Vegetarian"}
+            <strong>
+              {food.vegetarian ? "🥕 Vegetarian" : "🍖 Non-Vegetarian"}
+            </strong>
           </span>
         </div>
         <div>
-          $ <span>{food.pricePerServing / 100} Per serving</span>
+          $ <span>
+            <strong>
+              {food.pricePerServing / 100} Per serving
+            </strong>
+          </span>
         </div>
-      </div>
-      <div>
-        <h2>Instructions:</h2>
-        {isLoading ? <p>Loading...</p> : food.
-          analyzedInstructions
-        [0].steps.map((step) => (<li>{step.step}</li>))}
+        <div>
+          <h2>Ingredients</h2>
+
+          <h2>Instructions</h2>
+          <div>
+            {/* {food.extendedIngredients.map(function (item) {
+              return (
+                <div>
+                  {item.name}
+                </div>
+              )
+            })} */}
+          </div>
+          <div className={styles.recipeInstructions}>
+            <ol>
+              {isLoading ? (
+                <p>Loading...</p>
+              ) : (
+                food.analyzedInstructions[0].steps.map((step) => (
+                  <li>{step.step}</li>
+                ))
+              )}
+            </ol>
+          </div>
+        </div>
       </div>
     </div>
   )
