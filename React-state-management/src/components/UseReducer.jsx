@@ -48,7 +48,7 @@ function NameList() {
         onChange={(e) => dispatch({ type: "SET_NAME", payload: e.target.value })} />
       <div>Name = {state.name}</div>
       <button
-        onClick={() => dispatch({ type: "ADD_NAME" })}
+        onClick={(e) => dispatch({ type: "ADD_NAME" })}
       >Add Name</button>
     </div>
   )
