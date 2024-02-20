@@ -1,10 +1,11 @@
-import { useState } from 'react'
-import UseState from './components/UseState'
+import UseReducer from './components/UseReducer'
+import UseState from "./components/UseState"
 
 function App() {
   return (
     <div>
-      <UseState></UseState>
+      {/* <UseState></UseState> */}
+      <UseReducer></UseReducer>
     </div>
   )
 }
