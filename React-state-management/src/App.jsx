@@ -14,8 +14,8 @@ function App() {
       {/* <UseMemo></UseMemo> */}
       {/* <UseEffect></UseEffect> */}
       {/* <UseRef></UseRef> */}
-      {/* <UseContext></UseContext> */}
-      <ReactQuery></ReactQuery>
+      <UseContext></UseContext>
+      {/* <ReactQuery></ReactQuery> */}
     </div>
   );
 }
