@@ -10,11 +10,11 @@ function App() {
   return (
     <div>
       {/* <UseState></UseState> */}
-      {/* <UseReducer></UseReducer> */}
+      <UseReducer></UseReducer>
       {/* <UseMemo></UseMemo> */}
       {/* <UseEffect></UseEffect> */}
       {/* <UseRef></UseRef> */}
-      <UseContext></UseContext>
+      {/* <UseContext></UseContext> */}
       {/* <ReactQuery></ReactQuery> */}
     </div>
   );
