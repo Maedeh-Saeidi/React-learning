@@ -33,6 +33,23 @@ it("should render some blablabla", async () => {
 });
 
 //FIND BY
-it("should render same text passed into title prop", () => {
-  render(<Header></Header>);
+
+it("should render same text passed into title prop", async () => {
+  render(<Header title="My Header" />);
+  const headingElement = await screen.findByText(/my header/i);
+  expect(headingElement).toBeInTheDocument();
+});
+
+//QueryBy
+
+it("should not be dogs text in it", async () => {
+  render(<Header title="My Header" />);
+  const headingElement = screen.queryByText(/dogs/i);
+  expect(headingElement).not.toBeInTheDocument();
+});
+
+it("should i do know what", () => {
+  render(<Header title="My Header" />);
+  const headingElements = screen.getAllByRole("heading");
+  expect(headingElements.length).toBe(2);
 });
